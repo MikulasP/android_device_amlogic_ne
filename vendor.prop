@@ -1,0 +1,62 @@
+## Bluetooth
+bluetooth.core.gap.le.privacy.enabled=false
+bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.mcp.server.enabled=true
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.core.gap.le.conn.min.limit=6
+persist.vendor.bluetooth.prefferedrole=master
+wc_transport.soc_initialized=0
+
+## Graphics
+ro.hardware.vulkan=amlogic
+ro.opengles.version=196610
+ro.surface_flinger.supports_background_blur=1
+
+## Media
+persist.sys.media.avsync=true
+persist.vendor.media.bootvideo=0050
+ro.media.camera_preview.maxsize=1920x1080
+ro.media.camera_preview.limitedrate=1920x1080x30,1280x720x30,640x480x30,320x240x28
+ro.media.camera_preview.usemjpeg=1
+ro.vendor.media.support.ffmpeg.adec=false
+#ro.vendor.sdr2hdr.enable=true
+vendor.afbcd.enable=1
+
+## Screencontrol
+ro.vendor.screencontrol.maxbufsize=104857600
+
+## OMX
+ro.vendor.media.support.omx2=true
+vendor.media.omx2.in_buffer=5
+vendor.ionvideo.enable=1
+vendor.media.omx.use.360omx2=false
+vendor.media.omx.out_buffer2_osd=8
+vendor.media.omx.display_mode=3
+vendor.media.sf.omxvideo-optmize=1
+vendor.media.support.mvc=true
+
+## OMX ne
+vendor.tv.dtv.tf.disable=false
+vendor.media.audio.syncshow=1
+vendor.media.omx2.support_mpeg=true
+vendor.media.omx.dibypass.enable=false
+vendor.media.omx.videolayerrotation.enable=false
+vendor.omx2.nr.enable=true
+vendor.omx2.di.localbuf.enable=true
+vendor.media.omx.secure.prealloc=true
+vendor.media.omx.use_dv_frame=true
+ro.vendor.platform.is.dualspdif=true
+ro.vendor.platform.support.av1=true
+
+## OEM Lock
+ro.oem_unlock_supported=1
+
+## USB
+vendor.usb.controller=fdd00000.dwc2_a
