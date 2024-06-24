@@ -7,6 +7,6 @@ PRODUCT_MAKEFILES := \
 #TARGET_KERNEL_SOURCE := amlogic_kernel_5.4
 
 COMMON_LUNCH_CHOICES := \
-			lineage_ne-userdebug
+			lineage_ne-ap1a-userdebug
 
 

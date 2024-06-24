@@ -93,7 +93,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 VENDOR_SECURITY_PATCH := 2022-12-01
 
 ## Include the main common tree BoardConfig makefile
-include device/amlogic/common/BoardConfig.mk
+include device/amlogic/common/BoardConfigCommon.mk
 
 ## Include the common proprietary BoardConfig makefile
-include vendor/amlogic/ne/BoardConfig.mk
+include vendor/amlogic/ne/BoardConfigVendor.mk
