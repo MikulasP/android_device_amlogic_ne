@@ -8,6 +8,9 @@
 
 set -e
 
+VENDOR="amlogic"
+DEVICE="ne"
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -31,18 +34,18 @@ write_headers "s4 sc2 t7" "TARGET_AMLOGIC_SOC"
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 # Include ATV specific blobs for ATV targets
-printf '\n%s\n' 'ifeq ($(PRODUCT_IS_ATV),true)' >> "$PRODUCTMK"
+#printf '\n%s\n' 'ifeq ($(PRODUCT_IS_ATV),true)' >> "$PRODUCTMK"
 
-write_makefiles "${MY_DIR}/proprietary-files-atv.txt" true
+#write_makefiles "${MY_DIR}/proprietary-files-atv.txt" true
 
-printf '%s\n' 'endif' >> "$PRODUCTMK"
+#printf '%s\n' 'endif' >> "$PRODUCTMK"
 
 # Allow opting out of OP-TEE
-printf '\n%s\n' 'ifneq ($(TARGET_HAS_TEE),false)' >> "$PRODUCTMK"
+#printf '\n%s\n' 'ifneq ($(TARGET_HAS_TEE),false)' >> "$PRODUCTMK"
 
-write_makefiles "${MY_DIR}/proprietary-files-tee.txt" true
+#write_makefiles "${MY_DIR}/proprietary-files-tee.txt" true
 
-printf '%s\n' 'endif' >> "$PRODUCTMK"
+#printf '%s\n' 'endif' >> "$PRODUCTMK"
 
 # Finish
 write_footers
